@@ -1,0 +1,27 @@
+{
+  "name": "easypay-node-sdk",
+  "version": "1.0.3",
+  "description": "彩虹易支付类似平台nodejs版sdk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BWmelon/easypay-node-sdk.git"
+  },
+  "keywords": [
+    "easypay",
+    "sdk",
+    "node"
+  ],
+  "author": "bwmelon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BWmelon/easypay-node-sdk/issues"
+  },
+  "homepage": "https://github.com/BWmelon/easypay-node-sdk#readme",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
+}
