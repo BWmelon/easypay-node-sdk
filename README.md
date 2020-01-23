@@ -8,8 +8,6 @@
    
 ## DEMO
 	
-	
-	```javascript
 	const Easypay = require("easypay-node-sdk");
     
     const  easypayConfig = { 
@@ -18,6 +16,8 @@
         key: '94dXU8sx85p6xgt9Z9SogO9S53oo4dxT' // 对接密钥
     };
     
+    const easypay = new Easypay(easypayConfig);
+
     // 发起支付
     const payConfig = {
         type: 'alipay',
@@ -68,4 +68,3 @@
      */
     console.log(Easypay.orders());
     
-```
