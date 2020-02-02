@@ -28,7 +28,7 @@
         money: '0.01',
         sitename: '网站名称'
     };
-    console.log(Easypay.pay(payConfig));
+    console.log(easypay.pay(payConfig));
     
     // 二维码下单(部分商家有此功能，但是还没有遇到一家能用的，具体见平台文档)
     const qrpayConfig = {
@@ -38,33 +38,33 @@
         name: '商品名称',
         money: '0.01',
     };
-    console.log(Easypay.qrpay(payConfig));
+    console.log(easypay.qrpay(payConfig));
     
     /**
      * API-查询商户信息与结算规则
      */
-    console.log(Easypay.query());
+    console.log(easypay.query());
     
     /**
      * API-修改结算账号 如果商家关闭修改接口，此时将会返回html字符串
      * @param {String} account 支付宝账号
      * @param {String} username 支付宝姓名
      */
-    console.log(Easypay.query('13300000000', '麻花腾'));
+    console.log(easypay.query('13300000000', '麻花腾'));
     
     /**
      * API-查询结算记录
      */
-    console.log(Easypay.settle());
+    console.log(easypay.settle());
     
     /**
      * API-查询单个订单
      * @param {String} out_trade_no 商家订单号
      */
-    console.log(Easypay.order('20200806151343449'));
+    console.log(easypay.order('20200806151343449'));
     
     /**
      * API-批量查询订单
      */
-    console.log(Easypay.orders());
+    console.log(easypay.orders());
     
