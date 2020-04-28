@@ -1,6 +1,6 @@
 {
   "name": "easypay-node-sdk",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "彩虹易支付类似平台nodejs版sdk",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/BWmelon/easypay-node-sdk#readme",
   "dependencies": {
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5"
   }
 }

@@ -8,6 +8,7 @@ const {
 } = require('crypto');
 
 const request = require('request');
+const rp = require('request-promise')
 
 /**
  * JS版对象排序
@@ -206,11 +207,7 @@ class Easypay {
 
         var url = `${this.domain}/api.php?act=${config.act}&pid=${this.pid}&key=${this.key}&out_trade_no=${out_trade_no}`
 
-        request(url, (err, res) => {
-            if (!err && res.statusCode == 200) {
-                return res.body;
-            }
-        })
+        return rp(url);
     }
 
     /**

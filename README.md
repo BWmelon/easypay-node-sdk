@@ -50,7 +50,7 @@
      * @param {String} account 支付宝账号
      * @param {String} username 支付宝姓名
      */
-    console.log(easypay.query('13300000000', '麻花腾'));
+    console.log(easypay.change('13300000000', '麻花腾'));
     
     /**
      * API-查询结算记录
@@ -61,7 +61,7 @@
      * API-查询单个订单
      * @param {String} out_trade_no 商家订单号
      */
-    console.log(easypay.order('20200806151343449'));
+    easypay.order('20200806151343449').then(data => console.log(data));
     
     /**
      * API-批量查询订单
